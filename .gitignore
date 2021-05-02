@@ -1,5 +1,4 @@
-staging/apps/target/**
-./**/target/**
+staging/apps/target/*
 .settings/*
 .classpath
 .project
@@ -7,7 +6,6 @@ staging/apps/target/**
 .attach_pid*
 .idea
 *.iml
-/target
 .sts4-cache/
 .vscode/*
 !.vscode/settings.json
