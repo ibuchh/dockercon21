@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: petclinic
-        image: ibuchh/petclinic-spinnaker-jenkins
+        image: ibuchh/petclinic-dockercon21:1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         imagePullPolicy: Always
