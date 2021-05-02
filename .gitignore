@@ -1,5 +1,5 @@
-staging/apps/target/*
-./**/target/*
+staging/apps/target/**
+./**/target/**
 .settings/*
 .classpath
 .project
