@@ -13,6 +13,3 @@ staging/apps/target/*
 !.vscode/launch.json
 !.vscode/extensions.json
 _site/
-terraform/.terraform/*
-terraform/terraform.tfstate.backup
-terraform/terraform.tfstate
