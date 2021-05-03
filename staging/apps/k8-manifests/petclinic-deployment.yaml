@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: petclinic
+  annotations:
+    fluxcd.io/tag.petclinic: semver:~1
+    fluxcd.io/automated: 'true'
 spec:
   selector:
     matchLabels:
