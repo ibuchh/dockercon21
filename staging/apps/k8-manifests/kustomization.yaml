@@ -5,3 +5,9 @@ namespace: staging
 resources:
 - petclinic-deployment.yaml
 - petclinic-service.yaml
+replicas:
+- count: 1
+  name: petclinic-deployment
+images:
+- name: ibuchh/petclinic-dockercon21
+  newTag: 1.3
