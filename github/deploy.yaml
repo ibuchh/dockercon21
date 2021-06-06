@@ -44,7 +44,7 @@ jobs:
         EMAIL: ${{secrets.EMAIL}}
         VERSION: ${{ github.sha }}
         ECR_REPOSITORY: ibuchh/petclinic-dockercon21:1.3
-      working-directory: ./deployment
+      working-directory: ./staging/apps/k8-manifests
       run: |
         kustomize edit set image $ECR_REPOSITORY:$VERSION
         git add .
