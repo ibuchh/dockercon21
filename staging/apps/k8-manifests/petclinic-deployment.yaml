@@ -11,7 +11,7 @@ spec:
   selector:
     matchLabels:
       app: petclinic
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
