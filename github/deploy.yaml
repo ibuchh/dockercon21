@@ -34,7 +34,7 @@ jobs:
       id: build-image
       env:
         VERSION: ${{ github.sha }}
-        ECR_REPOSITORY: enschede/springbootflux
+        ECR_REPOSITORY: ibuchh/petclinic-dockercon21
       run: |
         docker tag $ECR_REPOSITORY:0.0.1-SNAPSHOT $ECR_REPOSITORY:$VERSION
         docker push $ECR_REPOSITORY:$VERSION
@@ -43,7 +43,7 @@ jobs:
       env:
         EMAIL: ${{secrets.EMAIL}}
         VERSION: ${{ github.sha }}
-        ECR_REPOSITORY: ibuchh/petclinic-dockercon21:1.3
+        ECR_REPOSITORY: ibuchh/petclinic-dockercon21
       working-directory: ./staging/apps/k8-manifests
       run: |
         kustomize edit set image $ECR_REPOSITORY:$VERSION
