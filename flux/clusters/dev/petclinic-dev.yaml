@@ -1,0 +1,15 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: petclinic
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  path: ./staging/apps/k8-manifests
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: petclinic
+  timeout: 2m0s
+  validation: client
