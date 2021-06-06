@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: petclinic
-  namespace: staging
+  namespace: dev
   annotations:
     fluxcd.io/tag.petclinic: semver:~1
     fluxcd.io/automated: 'true'
