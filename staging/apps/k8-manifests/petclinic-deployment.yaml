@@ -5,7 +5,7 @@ metadata:
   name: petclinic
   namespace: staging
   annotations:
-    fluxcd.io/tag.petclinic: semver:~1
+#     fluxcd.io/tag.petclinic: semver:~1
     fluxcd.io/automated: 'true'
 spec:
   selector:
