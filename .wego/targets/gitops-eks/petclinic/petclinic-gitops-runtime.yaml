@@ -6,7 +6,7 @@ metadata:
   namespace: wego-system
 spec:
   interval: 1m0s
-  path: ./staging/apps
+  path: ./staging/apps/k8-manifests
   prune: true
   sourceRef:
     kind: GitRepository
