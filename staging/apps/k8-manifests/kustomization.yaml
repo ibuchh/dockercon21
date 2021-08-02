@@ -5,6 +5,7 @@ namespace: staging
 resources:
 - petclinic-deployment.yaml
 - petclinic-service.yaml
+- namespace.yaml
 # replicas:
 # - count: 1
 #   name: petclinic-deployment
