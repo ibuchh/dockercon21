@@ -9,5 +9,5 @@ replicas:
 - count: 1
   name: petclinic-deployment
 images:
-- name: ibuchh/petclinic-dockercon21
-  newTag: 1.3
+- name: ibuchh/petclinic-dockercon21:1.3
+#   newTag: 1.3
