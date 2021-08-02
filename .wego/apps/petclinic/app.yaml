@@ -1,0 +1,14 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    weave-gitops.weave.works/app-identifier: wego-f92a2160ce2aac4294f702fda95593aa
+  name: petclinic
+  namespace: wego-system
+spec:
+  branch: master
+  deployment_type: kustomize
+  path: staging/apps
+  source_type: git
+  url: ssh://git@github.com/ibuchh/dockercon21.git
