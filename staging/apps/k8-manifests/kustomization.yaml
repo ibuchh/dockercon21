@@ -3,9 +3,9 @@ kind: Kustomization
 namespace: staging
 #nameSuffix: -dev
 resources:
+- namespace.yaml
 - petclinic-deployment.yaml
 - petclinic-service.yaml
-- namespace.yaml
 # replicas:
 # - count: 1
 #   name: petclinic-deployment
